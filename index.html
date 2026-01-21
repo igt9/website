@@ -11,19 +11,19 @@
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css?v=11">
+  <!-- CSS (bump version if needed) -->
+  <link rel="stylesheet" href="style.css?v=12">
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top">
+      <a class="brand" href="#top" aria-label="Go to top">
         <span class="brand-dot"></span>
         <span>Imej Gautam</span>
       </a>
 
-      <nav>
+      <nav aria-label="Primary Navigation">
         <ul class="nav">
           <li><a href="#top">Home</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -35,9 +35,8 @@
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" aria-label="Hero">
       <div class="container hero-inner">
-
         <!-- LEFT -->
         <div class="hero-copy">
           <p class="badge">
@@ -46,41 +45,44 @@
           </p>
 
           <h1>Hi, I’m <span class="accent">Imej</span>.</h1>
+
           <p class="subtitle">
             Civil Engineer with an interest in Water Resources Engineering.
           </p>
 
           <div class="hero-cta">
             <a href="#projects" class="btn">
-              View Projects <i class="fas fa-arrow-right"></i>
+              View Projects <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
+
             <a href="#contact" class="btn btn-ghost">
-              Contact <i class="fas fa-paper-plane"></i>
+              Contact <i class="fas fa-paper-plane" aria-hidden="true"></i>
             </a>
           </div>
 
-          <div class="hero-links">
-            <a href="https://www.linkedin.com/in/imej-gautam-309156212" target="_blank" class="icon-link">
-              <i class="fab fa-linkedin-in"></i>
+          <div class="hero-links" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/imej-gautam-309156212" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
             </a>
-            <a href="https://github.com/igt9" target="_blank" class="icon-link">
-              <i class="fab fa-github"></i>
+            <a href="https://github.com/igt9" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
             </a>
-            <a href="https://www.instagram.com/imejgautam/" target="_blank" class="icon-link">
-              <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/imejgautam/" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
         </div>
 
         <!-- RIGHT : PROFILE IMAGE -->
-        <div class="hero-card image-card">
+        <div class="hero-card image-card" aria-label="Profile image">
           <div class="profile-circle">
-            <img src="images/profile.jpg" alt="Imej Gautam">
+            <!-- Put your image in /images/profile.jpg -->
+            <img src="images/profile.jpg" alt="Imej Gautam" />
           </div>
         </div>
-
       </div>
-      <div class="hero-glow"></div>
+
+      <div class="hero-glow" aria-hidden="true"></div>
     </section>
 
     <!-- PROJECTS -->
@@ -101,7 +103,7 @@
             </div>
             <p>Flood hazard mapping under future climate scenarios using Rain-on-Grid HEC-RAS 2D.</p>
             <a class="card-link" href="flood-hazard.html">
-              View Project <i class="fas fa-arrow-right"></i>
+              View Project <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
           </article>
 
@@ -112,7 +114,7 @@
             </div>
             <p>Hydraulic analysis and fair water distribution planning in a DMA.</p>
             <a class="card-link" href="fairwater.html">
-              View Project <i class="fas fa-arrow-right"></i>
+              View Project <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
           </article>
         </div>
@@ -129,17 +131,25 @@
 
         <div class="contact-panel">
           <a href="mailto:077bce061.imej@pcampus.edu.np" class="btn">
-            Email Me <i class="fas fa-envelope"></i>
+            Email Me <i class="fas fa-envelope" aria-hidden="true"></i>
           </a>
 
-          <div class="contact-icons">
-            <a href="https://www.linkedin.com/in/imej-gautam-309156212" target="_blank" class="icon-link">
-              <i class="fab fa-linkedin-in"></i>
+          <div class="contact-icons" aria-label="Contact links">
+            <a href="https://www.linkedin.com/in/imej-gautam-309156212" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
             </a>
-            <a href="https://github.com/igt9" target="_blank" class="icon-link">
-              <i class="fab fa-github"></i>
+            <a href="https://github.com/igt9" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/imejgautam/" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
+
+          <p class="phone">
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            <a href="tel:+9779741738263">+977 9741738263</a>
+          </p>
         </div>
       </div>
     </section>
