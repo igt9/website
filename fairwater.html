@@ -30,22 +30,24 @@
   </header>
 
   <main id="top">
+    <!-- HERO -->
     <section class="project-hero">
       <div class="container project-hero-inner">
         <a class="back-link" href="index.html#projects">
           <i class="fas fa-arrow-left"></i> Back to Projects
         </a>
 
-        <h1>FairWater DMA Planning</h1>
+        <h1>Fair Water Distribution Management Plan (DMA Focus)</h1>
 
         <p class="project-subtitle">
-          Urban water distribution modeling focused on District Metered Area (DMA) planning and Non-Revenue Water (NRW)
-          analysis to support monitoring, pressure management, and leakage reduction.
+          Internship project at KUKL (Maharajgunj Branch) focused on assessing and simulating the existing distribution
+          pattern in <strong>DMA 10.1</strong> and preparing a fair water distribution plan based on population and demand,
+          supported by GIS mapping and NRW analysis workflows.
         </p>
 
         <div class="project-actions">
-          <a class="btn" href="https://github.com/imejgautam" target="_blank" rel="noopener noreferrer">
-            GitHub <i class="fab fa-github"></i>
+          <a class="btn" href="index.html#contact">
+            Contact <i class="fas fa-paper-plane"></i>
           </a>
           <a class="btn btn-ghost" href="#overview">
             Jump to Overview <i class="fas fa-arrow-down"></i>
@@ -54,118 +56,202 @@
       </div>
     </section>
 
+    <!-- CONTENT -->
     <section class="section">
       <div class="container project-grid">
-        <div class="writeup">
+
+        <!-- LEFT: WRITEUP -->
+        <article class="writeup">
           <h2 id="overview">Overview</h2>
           <p>
-            This project supports urban water distribution analysis by developing a DMA planning workflow and applying
-            NRW analysis concepts. The aim is to partition the network into manageable zones for monitoring and control,
-            improve operational visibility, and identify leakage-prone behaviors through pressure/flow interpretation.
+            This project documents my internship work under the initiative
+            “Collaborative Research and Capacity Strengthening for Enhancing Water Security in Kathmandu Valley (Phase-1)”
+            and my assigned theme: <strong>“Fair Water Distribution Management Plan in one DMA”</strong>.
+            The internship ran for three months (mid-May to mid-August 2025) and my core objective was to assess and
+            simulate the existing distribution pattern in <strong>DMA 10.1</strong> and prepare a fair distribution plan
+            based on population and demand.
           </p>
 
           <div class="hr"></div>
 
-          <h2 id="study-area">System / Study Context</h2>
+          <h2 id="context">Internship Context</h2>
+          <ul class="nice-list">
+            <li><strong>Placement:</strong> KUKL, Maharajgunj Branch</li>
+            <li><strong>Theme:</strong> Fair Water Distribution Management Plan in one DMA</li>
+            <li><strong>Supervisor:</strong> Er. Narayan Karna</li>
+            <li><strong>Core DMA:</strong> DMA 10.1 (fair distribution assessment + simulation)</li>
+          </ul>
+
+          <div class="figure">
+            <div class="ph">[Insert Photo: meeting / internship snapshot]</div>
+            <div class="caption">Add 1 photo from your internship (optional). Keep it clean and minimal.</div>
+          </div>
+
+          <div class="hr"></div>
+
+          <h2 id="workstreams">Workstreams</h2>
           <p>
-            The work is designed for a typical urban distribution network where supply nodes, demand nodes, and
-            pipelines are represented in a hydraulic model. DMA boundaries are defined to create controllable zones and
-            support targeted monitoring via meter locations.
+            My internship activities covered three main workstreams: (1) GIS-based pipe network mapping, (2) NRW calculation,
+            and (3) fair water distribution assessment & planning in DMA 10.1.
           </p>
 
-          <div class="figure">
-            <div class="ph">[Insert Network Map / DMA Boundary Figure Here]</div>
-            <div class="caption">Figure: Network layout and proposed DMA boundaries (replace with your map).</div>
-          </div>
-
-          <div class="hr"></div>
-
-          <h2 id="methodology">Methodology</h2>
+          <h2 id="gis">1) Pipe Network Mapping (QGIS)</h2>
           <p>
-            The workflow combines network data preparation, hydraulic simulation, DMA boundary definition,
-            monitoring design, and NRW-focused interpretation.
+            A short training was conducted to equip interns with skills for laying out water supply pipes and valves in QGIS.
+            After that, mapping tasks were carried out in coordination with valve operators.
           </p>
 
-          <h2>Key Components</h2>
           <ul class="nice-list">
-            <li><strong>Network Data:</strong> Nodes, pipes, reservoirs/tanks, demands (and patterns if available)</li>
-            <li><strong>Hydraulic Modeling:</strong> Flow and pressure simulation under representative conditions</li>
-            <li><strong>DMA Design:</strong> Boundary selection, zone creation, inlet/outlet identification</li>
-            <li><strong>Monitoring:</strong> Candidate meter locations for district-level control</li>
-            <li><strong>NRW Analysis:</strong> Pressure/flow behavior and indicators supporting leakage investigation</li>
+            <li><strong>Mapped areas:</strong> Tarakeshwor & Tokha Municipality</li>
+            <li><strong>Coordination:</strong> Valve operators (field coordination) and site offices</li>
+            <li><strong>Output:</strong> Updated pipe network layer and pipe database summaries (material/diameter)</li>
           </ul>
 
           <div class="figure">
-            <div class="ph">[Insert Workflow Diagram Here]</div>
-            <div class="caption">Figure: Workflow from network model → DMA design → monitoring → NRW insights.</div>
+            <div class="ph">[Insert Image: Pipe Network Map (QGIS)]</div>
+            <div class="caption">Recommended: one clean QGIS map export + one screenshot of attribute table summary.</div>
           </div>
 
           <div class="hr"></div>
 
-          <h2 id="analysis">Analysis & Outputs</h2>
+          <h2 id="nrw">2) NRW Calculation (DMA 7.1)</h2>
+          <p>
+            NRW calculation is a key first step in NRW management — it involves collecting monthly readings at customer connections
+            and estimating supplied water that did not generate revenue due to issues like unauthorized consumption or metering defects.
+          </p>
+
           <ul class="nice-list">
-            <li>DMA zoning plan and boundary maps</li>
-            <li>Pressure distribution and critical node identification</li>
-            <li>Flow summaries at key links / DMA inlets</li>
-            <li>NRW interpretation notes and recommended next investigations</li>
+            <li><strong>DMA:</strong> DMA 7.1</li>
+            <li><strong>Approach:</strong> Monthly meter reading-based calculation and comparison across scenarios</li>
+            <li><strong>Main difficulty:</strong> Inconsistent meter reading data and unreliable remarks</li>
           </ul>
 
           <div class="figure">
-            <div class="ph">[Insert Pressure Map / Flow Summary Plot Here]</div>
-            <div class="caption">Figure: Pressure map or flow time-series summary (insert your plots).</div>
+            <div class="ph">[Insert Figure: NRW Ratio Graph(s) + Metered vs Unmetered Comparison]</div>
+            <div class="caption">Use 2 images: NRW ratio plot + bar/summary of metered vs unmetered customers.</div>
           </div>
 
           <div class="hr"></div>
 
-          <h2 id="tools">Tools</h2>
+          <h2 id="dma101">3) Fair Water Distribution Plan (DMA 10.1)</h2>
+          <p>
+            KUKL’s fair water distribution planning aims to allocate water more equitably so supply matches demand as closely as possible.
+            My role was to assess and analyze how the fair water supply plan performs in <strong>DMA 10.1</strong> and whether it supports equitable access.
+          </p>
+
+          <h2 id="dma101-data">Data Preparation</h2>
           <ul class="nice-list">
-            <li>EPANET / equivalent network model</li>
-            <li>GIS for mapping and visualization</li>
-            <li>Excel for reporting and summaries</li>
-            <li>Python (optional) for automation/processing</li>
+            <li><strong>DMA Coverage:</strong> Define/confirm the area covered by DMA 10.1</li>
+            <li><strong>Sub-division:</strong> Organize sub-areas using meter reading address information</li>
+            <li><strong>Network:</strong> Build/verify the water supply network map for DMA 10.1</li>
+          </ul>
+
+          <div class="figure">
+            <div class="ph">[Insert Figure: DMA 10.1 Coverage + Sub-division Map]</div>
+            <div class="caption">Use 2 side-by-side images later: DMA boundary + sub-division by meter address.</div>
+          </div>
+
+          <h2 id="watergems">Hydraulic Modeling (WaterGEMS)</h2>
+          <p>
+            A hydraulic model was developed for DMA 10.1 and compared with actual meter reading observations to evaluate real-world performance.
+          </p>
+
+          <div class="figure">
+            <div class="ph">[Insert Screenshot: WaterGEMS Model Layout]</div>
+            <div class="caption">Add a clear WaterGEMS model screenshot (zoomed & readable).</div>
+          </div>
+
+          <h2 id="findings">Key Findings</h2>
+          <p>
+            Comparing meter readings with model-predicted outflows showed major gaps across most locations. Actual supply was about
+            <strong>35–55% lower than expected</strong> in areas such as <strong>Chamati 3, Balaju, and New Colony</strong>, while a few sites like
+            <strong>Janahit Tole</strong> and <strong>Lekhnath Sadak</strong> aligned more closely.
+          </p>
+
+          <p>
+            These discrepancies suggest significant NRW influences (leakage, meter inaccuracies, unauthorized consumption). From a fairness perspective,
+            even if the model allocates water “equally,” the real supply can be much lower in some communities — undermining equity and transparency.
+          </p>
+
+          <div class="figure">
+            <div class="ph">[Insert Figure: Model vs Meter Reading Comparison Table/Chart]</div>
+            <div class="caption">This should be your strongest figure: model vs observed comparison (clean & readable).</div>
+          </div>
+
+          <h2 id="challenges">Challenges</h2>
+          <ul class="nice-list">
+            <li><strong>Discrepancy in model outputs</strong> vs. meter-based reality</li>
+            <li><strong>Unreliable remarks/address</strong> in meter reading data</li>
+            <li><strong>Significant unmetered customers</strong>, affecting analysis and equity assessment</li>
           </ul>
 
           <div class="hr"></div>
 
-          <h2 id="next">Next Improvements</h2>
+          <h2 id="recommendations">Recommendations / Ways Forward</h2>
+          <p>
+            Based on the observed gaps between modeled and actual supply, the fair distribution plan should be supported by:
+          </p>
           <ul class="nice-list">
-            <li>Calibrate network with observed pressure/flow measurements</li>
-            <li>Run multi-demand scenarios and evaluate sensitivity</li>
-            <li>Integrate leak detection indicators and nightly minimum flow analysis</li>
+            <li><strong>Leakage control</strong> and targeted investigations in low-supply zones</li>
+            <li><strong>Metering improvements</strong> (reduce unmetered connections, improve meter reliability)</li>
+            <li><strong>Model recalibration</strong> using updated observations and improved field data quality</li>
+            <li><strong>Better data remarks/address standardization</strong> for future monitoring and fairness checks</li>
           </ul>
-        </div>
 
+          <div class="hr"></div>
+
+          <h2 id="gallery">Suggested Image Placement (So it looks “pro”)</h2>
+          <ul class="nice-list">
+            <li><strong>1 image:</strong> DMA 10.1 coverage map (clean boundary map)</li>
+            <li><strong>1 image:</strong> DMA sub-division map (based on meter reading address)</li>
+            <li><strong>1 image:</strong> WaterGEMS model screenshot (layout view)</li>
+            <li><strong>1 image:</strong> Model vs meter comparison (table/chart)</li>
+            <li><strong>Optional:</strong> NRW ratio plot + metered vs unmetered comparison</li>
+          </ul>
+
+          <p style="margin-top: 10px; font-weight: 600; color: rgba(15,23,42,0.65);">
+            Note: If any figures contain sensitive operational data, you can blur/clip the identifiers before uploading to the website.
+          </p>
+        </article>
+
+        <!-- RIGHT: STICKY SIDEBAR -->
         <aside class="project-side">
           <div class="info-card">
             <h3>Quick Info</h3>
-            <div class="info-row"><span>Category</span><span>Water Networks</span></div>
-            <div class="info-row"><span>Focus</span><span>DMA • NRW</span></div>
-            <div class="info-row"><span>Outputs</span><span>Maps • Metrics</span></div>
-            <div class="info-row"><span>Tools</span><span>EPANET • GIS • Excel</span></div>
+            <div class="info-row"><span>Focus</span><span>DMA Planning • Fair Supply</span></div>
+            <div class="info-row"><span>DMA</span><span>DMA 10.1</span></div>
+            <div class="info-row"><span>Support Work</span><span>QGIS • NRW (DMA 7.1)</span></div>
+            <div class="info-row"><span>Modeling</span><span>WaterGEMS</span></div>
+            <div class="info-row"><span>Tools</span><span>QGIS • Excel • Python</span></div>
           </div>
 
           <div class="info-card">
             <h3>On this page</h3>
             <div class="toc">
               <a href="#overview">Overview <i class="fas fa-chevron-right"></i></a>
-              <a href="#study-area">Context <i class="fas fa-chevron-right"></i></a>
-              <a href="#methodology">Methodology <i class="fas fa-chevron-right"></i></a>
-              <a href="#analysis">Outputs <i class="fas fa-chevron-right"></i></a>
-              <a href="#tools">Tools <i class="fas fa-chevron-right"></i></a>
-              <a href="#next">Next Steps <i class="fas fa-chevron-right"></i></a>
+              <a href="#context">Context <i class="fas fa-chevron-right"></i></a>
+              <a href="#workstreams">Workstreams <i class="fas fa-chevron-right"></i></a>
+              <a href="#gis">QGIS Mapping <i class="fas fa-chevron-right"></i></a>
+              <a href="#nrw">NRW (DMA 7.1) <i class="fas fa-chevron-right"></i></a>
+              <a href="#dma101">DMA 10.1 <i class="fas fa-chevron-right"></i></a>
+              <a href="#watergems">WaterGEMS <i class="fas fa-chevron-right"></i></a>
+              <a href="#findings">Findings <i class="fas fa-chevron-right"></i></a>
+              <a href="#recommendations">Recommendations <i class="fas fa-chevron-right"></i></a>
+              <a href="#gallery">Image Placement <i class="fas fa-chevron-right"></i></a>
             </div>
           </div>
 
           <div class="info-card">
             <h3>Links</h3>
-            <a class="side-link" href="https://github.com/imejgautam" target="_blank" rel="noopener noreferrer">
-              GitHub <i class="fas fa-arrow-right"></i>
+            <a class="side-link" href="index.html#projects">
+              More Projects <i class="fas fa-arrow-right"></i>
             </a>
             <a class="side-link" href="index.html#contact">
               Contact <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </aside>
+
       </div>
     </section>
   </main>
@@ -176,5 +262,13 @@
       <a class="to-top" href="#top">Back to top ↑</a>
     </div>
   </footer>
+
+  <!-- Source grounding for this page (internship report):
+       Internship objective & dates: :contentReference[oaicite:8]{index=8}
+       Activity summary: :contentReference[oaicite:9]{index=9}
+       QGIS mapping details: :contentReference[oaicite:10]{index=10}
+       NRW definition/task & challenge: :contentReference[oaicite:11]{index=11} :contentReference[oaicite:12]{index=12}
+       DMA 10.1 fairness + WaterGEMS + findings/challenges: :contentReference[oaicite:13]{index=13} :contentReference[oaicite:14]{index=14} :contentReference[oaicite:15]{index=15}
+  -->
 </body>
 </html>
