@@ -11,19 +11,19 @@
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-  <!-- CSS (cache bust) -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css?v=11">
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Go to top">
+      <a class="brand" href="#top">
         <span class="brand-dot"></span>
         <span>Imej Gautam</span>
       </a>
 
-      <nav aria-label="Primary">
+      <nav>
         <ul class="nav">
           <li><a href="#top">Home</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -35,9 +35,10 @@
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero" aria-label="Hero">
+    <section class="hero">
       <div class="container hero-inner">
-        <!-- Left -->
+
+        <!-- LEFT -->
         <div class="hero-copy">
           <p class="badge">
             <span class="badge-dot"></span>
@@ -45,7 +46,6 @@
           </p>
 
           <h1>Hi, I’m <span class="accent">Imej</span>.</h1>
-
           <p class="subtitle">
             Civil Engineer with an interest in Water Resources Engineering.
           </p>
@@ -54,37 +54,33 @@
             <a href="#projects" class="btn">
               View Projects <i class="fas fa-arrow-right"></i>
             </a>
-
             <a href="#contact" class="btn btn-ghost">
               Contact <i class="fas fa-paper-plane"></i>
             </a>
           </div>
 
-          <div class="hero-links" aria-label="Quick links">
-            <a href="https://www.linkedin.com/in/imej-gautam-309156212" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
+          <div class="hero-links">
+            <a href="https://www.linkedin.com/in/imej-gautam-309156212" target="_blank" class="icon-link">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/igt9" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
+            <a href="https://github.com/igt9" target="_blank" class="icon-link">
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/imejgautam/" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Instagram">
+            <a href="https://www.instagram.com/imejgautam/" target="_blank" class="icon-link">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
         </div>
 
-        <!-- Right (Skills Card) -->
-      <div class="hero-card image-card" aria-label="Profile image">
-  <div class="profile-circle">
-    <img src="images/Profile Pic.jpg" alt="Imej Gautam" />
-  </div>
-</div>
-
-
+        <!-- RIGHT : PROFILE IMAGE -->
+        <div class="hero-card image-card">
+          <div class="profile-circle">
+            <img src="images/profile.jpg" alt="Imej Gautam">
+          </div>
+        </div>
 
       </div>
-
-      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-glow"></div>
     </section>
 
     <!-- PROJECTS -->
@@ -101,9 +97,9 @@
           <article class="card">
             <div class="card-top">
               <h3>Flood Hazard Assessment</h3>
-              <span class="pill">Flood Modeling • HEC-RAS 2D</span>
+              <span class="pill">Flood • Climate • HEC-RAS</span>
             </div>
-            <p>Flood hazard mapping under climate change scenarios using Rain-on-Grid approach and CMIP6 projections.</p>
+            <p>Flood hazard mapping under future climate scenarios using Rain-on-Grid HEC-RAS 2D.</p>
             <a class="card-link" href="flood-hazard.html">
               View Project <i class="fas fa-arrow-right"></i>
             </a>
@@ -111,34 +107,12 @@
 
           <article class="card">
             <div class="card-top">
-              <h3>Fair Water Distribution Plan in a DMA</h3>
-              <span class="pill">DMA • NRW • WaterGEMS</span>
+              <h3>Fair Water Distribution (DMA)</h3>
+              <span class="pill">Water Supply • WaterGEMS</span>
             </div>
-            <p>DMA-based planning for fair water distribution supported by WaterGEMS modeling, GIS mapping, and NRW analysis.</p>
+            <p>Hydraulic analysis and fair water distribution planning in a DMA.</p>
             <a class="card-link" href="fairwater.html">
               View Project <i class="fas fa-arrow-right"></i>
-            </a>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <h3>Climate Data Web App</h3>
-              <span class="pill">Python • Dash</span>
-            </div>
-            <p>Dash-based tool for CMIP6 selection, conversion, and export to Excel/CSV.</p>
-            <a class="card-link" href="https://github.com/igt9/Climate-Data-Web-App" target="_blank" rel="noopener noreferrer">
-              Github Repo <i class="fas fa-arrow-right"></i>
-            </a>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <h3>River Cross-Section from DEM</h3>
-              <span class="pill">River Analysis • Python</span>
-            </div>
-            <p>Automated river cross-section extraction workflow using DEM terrain data.</p>
-            <a class="card-link" href="https://github.com/igt9/River-Cross-Section-Generator" target="_blank" rel="noopener noreferrer">
-              Github Repo <i class="fas fa-arrow-right"></i>
             </a>
           </article>
         </div>
@@ -159,21 +133,13 @@
           </a>
 
           <div class="contact-icons">
-            <a href="https://www.linkedin.com/in/imej-gautam-309156212" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/imej-gautam-309156212" target="_blank" class="icon-link">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/igt9" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
+            <a href="https://github.com/igt9" target="_blank" class="icon-link">
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/imejgautam/" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
           </div>
-
-          <p class="phone">
-            <i class="fas fa-phone-alt"></i>
-            <a href="tel:+9779741738263">+977 9741738263</a>
-          </p>
         </div>
       </div>
     </section>
@@ -181,13 +147,9 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; 2025 Imej Gautam. All rights reserved.</p>
+      <p>&copy; 2025 Imej Gautam</p>
       <a class="to-top" href="#top">Back to top ↑</a>
     </div>
   </footer>
 </body>
 </html>
-
-
-
-
