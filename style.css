@@ -220,13 +220,13 @@ a:focus-visible{
   box-shadow:0 14px 30px rgba(15,23,42,.09);
 }
 
-/* HERO CARD (right box) */
+/* ✅ REMOVE THE OUTSIDE RECTANGLE LOOK (disable hero-card styling when used for image) */
 .hero-card{
-  background:rgba(255,255,255,.72);
-  border:1px solid rgba(15,23,42,.10);
-  border-radius:var(--radius-lg);
-  padding:18px;
-  box-shadow:var(--shadow);
+  background:transparent;
+  border:none;
+  border-radius:0;
+  padding:0;
+  box-shadow:none;
 }
 
 /* Image card center */
@@ -234,21 +234,23 @@ a:focus-visible{
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:28px;
+  padding:0; /* cleaner, no extra padding */
 }
 
-/* ✅ Circular profile image */
+/* ✅ BIGGER Circular profile image */
 .profile-circle{
-  width:220px;
-  height:220px;
+  width:320px;              /* bigger */
+  height:320px;             /* bigger */
   border-radius:50%;
   overflow:hidden;
-  padding:6px;
+  padding:8px;
   display:grid;
   place-items:center;
   background:linear-gradient(135deg,var(--accent),var(--accent-2));
-  box-shadow:0 25px 55px rgba(47,124,246,.35),
-             inset 0 0 0 1px rgba(255,255,255,.55);
+  box-shadow:
+    0 30px 70px rgba(47,124,246,.35),
+    0 0 0 12px rgba(47,124,246,.08),
+    inset 0 0 0 1px rgba(255,255,255,.55);
 }
 
 .profile-circle img{
@@ -257,6 +259,12 @@ a:focus-visible{
   border-radius:50%;
   object-fit:cover;
   background:#fff;
+}
+
+/* small hover (optional but classy) */
+.profile-circle:hover{
+  transform:scale(1.02);
+  transition:transform .25s ease;
 }
 
 /* Hero glow */
@@ -413,6 +421,7 @@ a:focus-visible{
 @media (max-width:900px){
   .hero-inner{grid-template-columns:1fr}
   .card{grid-column:span 12}
+  .profile-circle{width:260px;height:260px;}
 }
 
 @media (max-width:520px){
