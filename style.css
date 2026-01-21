@@ -104,28 +104,28 @@ a{text-decoration:none;color:inherit}
 }
 
 /* 🔥 CIRCULAR IMAGE (FINAL FIX) */
-.image-card{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:28px;
-}
+/* =========================
+   FORCE CIRCULAR HERO IMAGE
+   ========================= */
+
 .profile-circle{
-  width:220px;
-  height:220px;
-  border-radius:50%;
-  overflow:hidden;               /* CRITICAL */
-  padding:6px;
-  background:linear-gradient(135deg,var(--accent),var(--accent-2));
-  box-shadow:0 25px 55px rgba(47,124,246,.35);
+  width: 220px !important;
+  height: 220px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  padding: 6px !important;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
+  box-shadow: 0 25px 55px rgba(47,124,246,0.35) !important;
 }
+
 .profile-circle img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:50%;
-  background:#fff;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  display: block !important;
 }
+
 
 /* SECTIONS */
 .section{padding:76px 0}
@@ -167,3 +167,4 @@ a{text-decoration:none;color:inherit}
   .hero-inner{grid-template-columns:1fr}
   .card{grid-column:span 12}
 }
+
