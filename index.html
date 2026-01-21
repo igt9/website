@@ -12,7 +12,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
   <!-- CSS (cache bust) -->
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=11">
 </head>
 
 <body>
@@ -34,8 +34,10 @@
   </header>
 
   <main id="top">
+    <!-- HERO -->
     <section class="hero" aria-label="Hero">
       <div class="container hero-inner">
+        <!-- Left -->
         <div class="hero-copy">
           <p class="badge">
             <span class="badge-dot"></span>
@@ -43,6 +45,7 @@
           </p>
 
           <h1>Hi, I’m <span class="accent">Imej</span>.</h1>
+
           <p class="subtitle">
             Civil Engineer with an interest in Water Resources Engineering.
           </p>
@@ -70,38 +73,24 @@
           </div>
         </div>
 
-      <div class="hero-card" aria-label="Skills">
-  <h3 class="hero-card-title">Skills</h3>
+        <!-- Right (Skills Card) -->
+        <div class="hero-card" aria-label="Skills">
+          <h3 class="hero-card-title">Skills</h3>
 
-  <ul class="skills-list">
-    <li>
-      <span class="skill-dot"></span>
-      Hydrologic & Flood Modeling
-    </li>
-    <li>
-      <span class="skill-dot"></span>
-      Climate Data Processing (CMIP6)
-    </li>
-    <li>
-      <span class="skill-dot"></span>
-      GIS & Spatial Analysis
-    </li>
-    <li>
-      <span class="skill-dot"></span>
-      Water Distribution & DMA Analysis
-    </li>
-    <li>
-      <span class="skill-dot"></span>
-      Python for Data Analysis
-    </li>
-  </ul>
-</div>
-
+          <ul class="skills-list">
+            <li><span class="skill-dot"></span> Hydrologic & Flood Modeling</li>
+            <li><span class="skill-dot"></span> Climate Data Processing (CMIP6)</li>
+            <li><span class="skill-dot"></span> GIS & Spatial Analysis</li>
+            <li><span class="skill-dot"></span> Water Distribution & DMA Analysis</li>
+            <li><span class="skill-dot"></span> Python for Data Analysis</li>
+          </ul>
+        </div>
       </div>
 
       <div class="hero-glow" aria-hidden="true"></div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="section section-alt">
       <div class="container">
         <div class="section-head">
@@ -115,9 +104,9 @@
           <article class="card">
             <div class="card-top">
               <h3>Flood Hazard Assessment</h3>
-              <span class="pill">Flood Modelling • Climate Change • HEC-RAS 2D </span>
+              <span class="pill">Flood Modeling • HEC-RAS 2D</span>
             </div>
-            <p>Flood hazard mapping for future climate change scenarios using rain on grid approach in HEC-RAS.</p>
+            <p>Flood hazard mapping under climate change scenarios using Rain-on-Grid approach and CMIP6 projections.</p>
             <a class="card-link" href="flood-hazard.html">
               View Project <i class="fas fa-arrow-right"></i>
             </a>
@@ -126,9 +115,9 @@
           <article class="card">
             <div class="card-top">
               <h3>Fair Water Distribution Plan in a DMA</h3>
-              <span class="pill">Water Supply • WaterGEMS</span>
+              <span class="pill">DMA • NRW • WaterGEMS</span>
             </div>
-            <p>.</p>
+            <p>DMA-based planning for fair water distribution supported by WaterGEMS modeling, GIS mapping, and NRW analysis.</p>
             <a class="card-link" href="fairwater.html">
               View Project <i class="fas fa-arrow-right"></i>
             </a>
@@ -137,7 +126,7 @@
           <article class="card">
             <div class="card-top">
               <h3>Climate Data Web App</h3>
-              <span class="pill"> Python • Dash</span>
+              <span class="pill">Python • Dash</span>
             </div>
             <p>Dash-based tool for CMIP6 selection, conversion, and export to Excel/CSV.</p>
             <a class="card-link" href="https://github.com/igt9/Climate-Data-Web-App" target="_blank" rel="noopener noreferrer">
@@ -159,6 +148,7 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container">
         <div class="section-head">
@@ -200,5 +190,3 @@
   </footer>
 </body>
 </html>
-
-
