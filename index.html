@@ -1,117 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Imej Gautam | Portfolio</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-
-  <!-- MAIN CSS (MUST LOAD) -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imej Gautam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-
 <body>
 
-<header class="header">
-  <div class="container nav">
-    <div class="brand">Imej Gautam</div>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>A Peek into My World</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<section class="hero">
-  <div class="container">
-    <h1>Water • Climate • Infrastructure</h1>
-    <p class="hero-sub">
-      Civil Engineering student working on flood modeling, climate data processing,
-      water distribution systems, and applied engineering research.
-    </p>
-  </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Hi, I'm Imej</h2>
+            <p>A passionate Civil Engineering Student and aspiring tech enthusiast.</p>
+            <a href="#projects" class="btn">View Projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
 
-<section id="projects" class="section">
-  <div class="container">
-    <h2 class="section-title">Projects</h2>
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a civil engineering student with a passion for solving civil engineering problems. I enjoy working with modeling software.</p>
+        </div>
+    </section>
 
-    <div class="project-grid">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p>Project 1 description goes here.</p>
+                    <a href="#">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p>Project 2 description goes here.</p>
+                    <a href="#">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="card">
+                    <h3>Project 3</h3>
+                    <p>Project 3 description goes here.</p>
+                    <a href="#">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="project-card">
-        <h3>Flood Hazard Assessment – Kathmandu Valley</h3>
-        <p>2D Rain-on-Grid flood modeling with observed calibration and CMIP6 projections.</p>
-        <a class="btn" href="https://github.com/imejgautam/flood-hazard-kathmandu" target="_blank">
-          <i class="fab fa-github"></i> GitHub Repo
-        </a>
-      </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email or through my social media accounts.</p>
 
-      <div class="project-card">
-        <h3>FairWater Distribution Management (DMA Planning)</h3>
-        <p>Urban water distribution analysis using QGIS, WaterGEMS, and NRW assessment.</p>
-        <a class="btn" href="https://github.com/imejgautam/fairwater-dma-planning" target="_blank">
-          <i class="fab fa-github"></i> GitHub Repo
-        </a>
-      </div>
+            <!-- Contact Info: Email, Social Links, and Phone Number -->
+            <div class="contact-info">
+                <a href="mailto:077bce061.imej@pcampus.edu.np" class="btn">Email: 077bce061.imej@pcampus.edu.np</a>
 
-      <div class="project-card">
-        <h3>Climate Data Download & Processing Web App</h3>
-        <p>Dash-based app for CMIP6 data retrieval, processing, and export via GEE.</p>
-        <a class="btn" href="https://github.com/imejgautam/climate-data-dash-app" target="_blank">
-          <i class="fab fa-github"></i> GitHub Repo
-        </a>
-      </div>
+                <!-- Social Links with Icons Only -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/imej-gautam-309156212" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/imejgautam" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/imej.gautam" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/imejgautam/" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
 
-      <div class="project-card">
-        <h3>Precision Irrigation System using IoT</h3>
-        <p>ESP32-based smart irrigation with real-time sensors and automation.</p>
-        <a class="btn" href="https://github.com/imejgautam/iot-precision-irrigation" target="_blank">
-          <i class="fab fa-github"></i> GitHub Repo
-        </a>
-      </div>
+                <!-- Contact Number -->
+                <p class="contact-number"><i class="fas fa-phone-alt"></i> <a href="tel:+9779741738263">+977 9741738263</a></p>
+            </div>
+        </div>
+    </section>
 
-      <div class="project-card">
-        <h3>Research Volunteer – S4W Nepal</h3>
-        <p>Field precipitation monitoring and flood event documentation.</p>
-        <a class="btn" href="https://github.com/imejgautam/s4w-monsoon-expedition" target="_blank">
-          <i class="fab fa-github"></i> GitHub Repo
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <div class="container">
-    <h2 class="section-title">Contact</h2>
-
-    <div class="contact-box">
-      <a href="mailto:your.email@example.com">
-        <i class="fas fa-envelope"></i> your.email@example.com
-      </a>
-      <a href="https://github.com/imejgautam" target="_blank">
-        <i class="fab fa-github"></i> github.com/imejgautam
-      </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  © <span id="year"></span> Imej Gautam
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
