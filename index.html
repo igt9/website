@@ -1,139 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imej Gautam</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imej Gautam</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <!-- Flask CSS (THIS ONLY WORKS IN FLASK) -->
-    <link rel="stylesheet" href="style.css">
-
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
 <header>
-    <div class="container">
-    
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<section class="hero">
-    <div class="container">
-        <h2>Hi, I'm Imej</h2>
-        <p>Civil Engineer with an interest in Water Resources Engineering</p>
-        <a href="#projects" class="btn">View Projects <i class="fas fa-arrow-right"></i></a>
-    </div>
+<section id="top" class="hero">
+  <div class="container">
+    <h2>Hi, I'm Imej</h2>
+    <p>Civil Engineer with an interest in Water Resources Engineering</p>
+    <a href="#projects" class="btn">
+      View Projects <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
 </section>
 
 <section class="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>
-            I recently graduated with a Bachelor's in Civil Engineering degree from Pulchowk Campus, Tribuvan University.
-            I am particularly interested in applying interdisciplinary approaches to contribute to emerging technologies in the domain of Civil Engineering. 
-        </p>
-    </div>
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I recently graduated with a Bachelor's degree in Civil Engineering from
+      Pulchowk Campus, Tribhuvan University. I am interested in applying
+      interdisciplinary approaches and data-driven methods in water resources
+      and climate-related engineering problems.
+    </p>
+  </div>
 </section>
 
 <section id="projects" class="projects">
-    <div class="container">
-        <h2>Research & Projects</h2>
-        <div class="project-cards">
+  <div class="container">
+    <h2>Research & Projects</h2>
 
-            <div class="card">
-                <h3>Flood Hazard Assessment</h3>
-                <p>2D Rain-on-Grid flood modeling with climate projections.</p>
-                <a href="https://github.com/imejgautam" target="_blank">
-                    View Project <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+    <div class="project-cards">
 
-            <div class="card">
-                <h3>FairWater DMA Planning</h3>
-                <p>Urban water distribution modeling and NRW analysis.</p>
-                <a href="https://github.com/imejgautam" target="_blank">
-                    View Project <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+      <div class="card">
+        <h3>Flood Hazard Assessment</h3>
+        <p>2D rain-on-grid flood modeling with climate change projections.</p>
+        <a href="https://github.com/imejgautam" target="_blank">
+          View Project <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
 
-            <div class="card">
-                <h3>Climate Data Web App</h3>
-                <p>Dash-based CMIP6 data retrieval and processing.</p>
-                <a href="https://github.com/igt9/Climate-Data-Web-App" target="_blank">
-                    View Project <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+      <div class="card">
+        <h3>FairWater DMA Planning</h3>
+        <p>Urban water distribution modeling and NRW analysis.</p>
+        <a href="https://github.com/imejgautam" target="_blank">
+          View Project <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
 
-            <div class="card">
-                <h3>FairWater DMA Planning</h3>
-                <p>Urban water distribution modeling and NRW analysis.</p>
-                <a href="https://github.com/imejgautam" target="_blank">
-                    View Project <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-<div class="card">
-                <h3>River Cross Section Generation from DEM</h3>
-                <p>Urban water distribution modeling and NRW analysis.</p>
-                <a href="https://github.com/imejgautam" target="_blank">
-                    View Project <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
+      <div class="card">
+        <h3>Climate Data Web App</h3>
+        <p>Dash-based CMIP6 data retrieval and processing.</p>
+        <a href="https://github.com/igt9/Climate-Data-Web-App" target="_blank">
+          View Project <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>River Cross-Section from DEM</h3>
+        <p>Automated extraction of river cross-sections using DEM data.</p>
+        <a href="https://github.com/imejgautam" target="_blank">
+          View Project <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
     </div>
+  </div>
 </section>
 
 <section id="contact" class="contact">
-    <div class="container">
-        <h2>Contact</h2>
-        <p>Reach out via email or social media.</p>
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Reach out via email or social media.</p>
 
-        <div class="contact-info">
-            <a href="mailto:077bce061.imej@pcampus.edu.np" class="btn">
-                Email: 077bce061.imej@pcampus.edu.np
-            </a>
+    <div class="contact-info">
+      <a href="mailto:077bce061.imej@pcampus.edu.np" class="btn">
+        Email Me
+      </a>
 
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/imej-gautam-309156212" target="_blank" class="social-icon">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://https://github.com/igt9" target="_blank" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/imejgautam/" target="_blank" class="social-icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/imej-gautam-309156212" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/igt9" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/imejgautam/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
 
-            <p class="contact-number">
-                <i class="fas fa-phone-alt"></i>
-                <a href="tel:+9779741738263">+977 9741738263</a>
-            </p>
-        </div>
+      <p class="contact-number">
+        <i class="fas fa-phone-alt"></i>
+        <a href="tel:+9779741738263">+977 9741738263</a>
+      </p>
     </div>
+  </div>
 </section>
 
 <footer>
-    <p>&copy; 2025 Imej Gautam. All rights reserved.</p>
+  <p>&copy; 2025 Imej Gautam. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
-
-
-
-
-
-
