@@ -601,74 +601,36 @@ a:focus-visible{
   .nav a{ padding: 9px 10px; }
   .footer-inner{ flex-direction: column; align-items: flex-start; }
 }
-/* =========================
-   Skills Card (Hero) – polished
+//* =========================
+   Circular Profile Image (Hero)
    ========================= */
 
-.skills-card{
-  padding: 20px;
-}
-
-.skills-head{
+.image-card{
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 14px;
+  padding: 28px;
 }
 
-.hero-card-title{
-  margin: 0;
-  font-size: 1.15rem;
-  font-weight: 800;
-  letter-spacing: -0.3px;
-  color: rgba(15, 23, 42, 0.88);
+.profile-circle{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(
+    135deg,
+    rgba(59,130,246,0.6),
+    rgba(147,197,253,0.6)
+  );
+  box-shadow:
+    0 25px 55px rgba(59,130,246,0.35),
+    inset 0 0 0 1px rgba(255,255,255,0.6);
 }
 
-.skills-tag{
-  font-size: 0.78rem;
-  font-weight: 800;
-  padding: 7px 10px;
-  border-radius: 999px;
-  background: rgba(47,124,246,0.10);
-  border: 1px solid rgba(47,124,246,0.18);
-  color: rgba(47,124,246,0.95);
+.profile-circle img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* THIS makes it crop properly */
+  border-radius: 50%;
+  background: #ffffff;
 }
-
-.skills-list{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 10px;
-}
-
-.skills-list li{
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 10px 12px;
-  border-radius: 14px;
-  background: rgba(255,255,255,0.55);
-  border: 1px solid rgba(15, 23, 42, 0.06);
-  color: rgba(15, 23, 42, 0.78);
-  font-weight: 650;
-  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-}
-
-.skills-list li:hover{
-  transform: translateY(-2px);
-  background: rgba(47,124,246,0.06);
-  border-color: rgba(47,124,246,0.20);
-}
-
-.skill-dot{
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  margin-top: 4px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  box-shadow: 0 0 0 5px rgba(47,124,246,0.12);
-  flex-shrink: 0;
-}
-
