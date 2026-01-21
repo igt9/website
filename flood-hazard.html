@@ -1,3 +1,6 @@
+<!-- =========================
+     floodhazard.html (FAIRWATER STYLE – FINAL)
+     ========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=10">
+  <!-- bump version when updating -->
+  <link rel="stylesheet" href="style.css?v=14">
 </head>
 
 <body>
@@ -30,6 +34,7 @@
   </header>
 
   <main id="top">
+    <!-- HERO -->
     <section class="project-hero">
       <div class="container project-hero-inner">
         <a class="back-link" href="index.html#projects">
@@ -40,7 +45,7 @@
 
         <p class="project-subtitle">
           A Rain-on-Grid (RoG) based HEC-RAS 2D flood hazard assessment integrating CMIP6 climate projections
-          (SSP245 and SSP585), bias-corrected precipitation, spatial analysis, and risk-focused outputs.
+          (SSP245 and SSP585), bias-corrected precipitation, spatial analysis, and scenario-based risk outputs.
         </p>
 
         <div class="project-actions">
@@ -52,134 +57,114 @@
           </a>
         </div>
       </div>
+      <div class="project-glow" aria-hidden="true"></div>
     </section>
 
+    <!-- CONTENT -->
     <section class="section">
       <div class="container project-grid">
-        <div class="writeup">
+
+        <!-- LEFT: WRITEUP -->
+        <article class="writeup">
           <h2 id="overview">Overview</h2>
           <p>
-            Flooding in the Kathmandu Valley has become increasingly severe due to rapid urbanization, river
-            encroachment, inadequate drainage systems, and the impacts of climate change. This project assesses
-            present and future flood hazards using a Rain-on-Grid (RoG) based 2D flood modeling approach combined
-            with CMIP6 climate projections.
-          </p>
-          <p>
-            The study integrates hydrodynamic flood modeling using HEC-RAS 2D, future climate projections under
-            SSP245 and SSP585 scenarios, bias-corrected precipitation data, and spatial analysis to identify
-            flood inundation, hazard zones, and high-risk areas.
+            Flooding in the Kathmandu Valley has intensified due to rapid urbanization, river encroachment,
+            inadequate drainage infrastructure, and climate-driven rainfall extremes. This research evaluates
+            present and future flood hazards using a Rain-on-Grid (RoG) based 2D flood modeling framework in
+            <strong>HEC-RAS 2D</strong>, combined with <strong>CMIP6</strong> climate projections.
           </p>
 
           <div class="hr"></div>
 
-          <h2 id="study-area">Study Area</h2>
-          <p>
-            The study focuses on the Kathmandu Valley (central Nepal) within the Upper Bagmati River Basin.
-            Major rivers and tributaries considered include Bagmati, Bishnumati, Dhobikhola, Manohara,
-            Hanumante, Balkhu, and Nakhu.
-          </p>
-
-          <div class="figure">
-            <div class="ph">[Insert Study Area Map Image Here]</div>
-            <div class="caption">Figure: Study area and administrative/rivers map (replace placeholder with your image).</div>
-          </div>
-
-          <div class="hr"></div>
-
-          <h2 id="methodology">Methodology</h2>
-          <p>
-            The project follows a structured workflow combining data preparation, hydrodynamic modeling,
-            climate projection processing, and spatial analysis.
-          </p>
-
-          <h2 id="components">Key Methodological Components</h2>
+          <h2 id="context">Research Details</h2>
           <ul class="nice-list">
-            <li><strong>Digital Elevation Model (DEM):</strong> AW3D / ALOS-based terrain data</li>
-            <li><strong>Land Use/Land Cover (LULC):</strong> Satellite-derived land cover maps</li>
-            <li><strong>Soil Data:</strong> Hydrologic soil groups for infiltration modeling</li>
-            <li><strong>Hydrological Modeling:</strong> Rain-on-Grid (RoG) approach in HEC-RAS 2D</li>
-            <li><strong>Climate Projections:</strong> CMIP6 GCM data under SSP245 and SSP585</li>
-            <li><strong>Bias Correction:</strong> Quantile Mapping (QM) applied to precipitation data</li>
-            <li><strong>Return Period Analysis:</strong> 50-year and 100-year flood events</li>
+            <li><strong>Topic:</strong> Flood hazard assessment under climate change</li>
+            <li><strong>Study Area:</strong> Kathmandu Valley (Upper Bagmati River Basin)</li>
+            <li><strong>Modeling:</strong> HEC-RAS 2D (Rain-on-Grid)</li>
+            <li><strong>Climate Scenarios:</strong> CMIP6 • SSP245 & SSP585</li>
+            <li><strong>Bias Correction:</strong> Quantile Mapping (precipitation)</li>
+            <li><strong>Events:</strong> 50-year & 100-year rainfall-based flood simulations</li>
           </ul>
 
-          <div class="figure">
-            <div class="ph">[Insert Methodology Workflow Diagram Here]</div>
-            <div class="caption">Figure: Workflow for data → climate processing → HEC-RAS 2D → hazard mapping.</div>
-          </div>
-
           <div class="hr"></div>
 
-          <h2 id="climate-tool">Climate Data Processing Tool</h2>
+          <h2 id="work">Areas of Work</h2>
+          <p>My research activities covered three main areas:</p>
+
+          <h2 id="study-area">1) Study Area & Dataset Preparation</h2>
           <p>
-            A web-based climate data processing application was developed to automate the extraction and
-            preparation of climate model data for the flood hazard assessment.
+            The study focuses on the Kathmandu Valley in central Nepal within the Upper Bagmati River Basin.
+            Major rivers and tributaries include Bagmati, Bishnumati, Dhobikhola, Manohara, Hanumante,
+            Balkhu, and Nakhu.
           </p>
 
-          <h2>Features</h2>
           <ul class="nice-list">
-            <li>Selection of station locations (latitude/longitude)</li>
-            <li>Choice of climate scenario (Historical, SSP245, SSP585)</li>
-            <li>Selection of CMIP6 climate models</li>
-            <li>Custom date range selection</li>
-            <li>Automatic conversion of precipitation data to mm/day</li>
-            <li>Export of daily precipitation data in Excel/CSV format</li>
+            <li><strong>Terrain:</strong> ALOS/AW3D-based DEM preparation for 2D flow domain</li>
+            <li><strong>LULC:</strong> Land cover data for surface roughness representation</li>
+            <li><strong>Soils:</strong> Hydrologic soil groups for infiltration modeling</li>
           </ul>
-
-          <div class="figure">
-            <div class="ph">[Insert Web App Screenshot(s) Here]</div>
-            <div class="caption">Figure: Climate tool UI / export example (insert your screenshots).</div>
-          </div>
 
           <div class="hr"></div>
 
-          <h2 id="calibration">Model Calibration and Validation</h2>
+          <h2 id="methodology">2) RoG-based HEC-RAS 2D Flood Modeling</h2>
           <p>
-            The HEC-RAS 2D model was calibrated and validated using observed discharge data from the Khokana
-            hydrological station. Model performance was evaluated using statistical indicators such as
-            correlation coefficients and efficiency metrics.
+            A Rain-on-Grid (RoG) approach was used to represent spatially distributed rainfall over the 2D domain.
+            The workflow includes model setup, parameterization, simulation of design rainfall events,
+            and post-processing of flood hazard outputs.
           </p>
 
-          <div class="figure">
-            <div class="ph">[Insert Calibration/Validation Plot Here]</div>
-            <div class="caption">Figure: Observed vs simulated discharge / performance metrics (replace placeholder).</div>
-          </div>
+          <ul class="nice-list">
+            <li><strong>Approach:</strong> Direct rainfall input over 2D domain</li>
+            <li><strong>Outputs:</strong> Flood depth, velocity, and inundation extent</li>
+          </ul>
 
           <div class="hr"></div>
 
-          <h2 id="outputs">Outputs</h2>
-          <ul class="nice-list">
-            <li>Flood inundation extent maps (baseline vs future scenarios)</li>
-            <li>Depth and velocity hazard layers</li>
-            <li>Hotspot identification (high-risk areas)</li>
-            <li>Scenario comparison figures and summary tables</li>
-          </ul>
+          <h2 id="calibration">3) Climate Scenario Analysis & Validation</h2>
+          <p>
+            Climate-driven rainfall inputs were derived from CMIP6 projections under SSP245 and SSP585.
+            Model simulations were evaluated using observed discharge data from the <strong>Khokana</strong>
+            hydrological station to assess model realism and response consistency.
+          </p>
 
-          <div class="figure">
-            <div class="ph">[Insert Hazard Map(s): Extent/Depth/Velocity]</div>
-            <div class="caption">Figure: Example hazard maps (extent/depth/velocity) — insert your final maps.</div>
-          </div>
-        </div>
+          <div class="hr"></div>
 
+          <h2 id="findings">Key Findings</h2>
+          <p>
+            The final outputs include flood inundation extents, depth and velocity hazard layers,
+            and scenario-based comparisons for baseline, SSP245, and SSP585 conditions under
+            50-year and 100-year rainfall events. These results highlight flood-prone hotspots
+            and support risk-informed urban and water management planning.
+          </p>
+        </article>
+
+        <!-- RIGHT: STICKY SIDEBAR -->
         <aside class="project-side">
-          <div class="info-card">
-            <h3>Quick Info</h3>
-            <div class="info-row"><span>Category</span><span>Flood Modeling</span></div>
-            <div class="info-row"><span>Model</span><span>HEC-RAS 2D (RoG)</span></div>
-            <div class="info-row"><span>Climate</span><span>CMIP6 • SSP245/585</span></div>
-            <div class="info-row"><span>Bias Correction</span><span>Quantile Mapping</span></div>
-            <div class="info-row"><span>Events</span><span>50-yr • 100-yr</span></div>
-          </div>
 
+          <!-- Gallery -->
           <div class="info-card">
-            <h3>On this page</h3>
-            <div class="toc">
-              <a href="#overview">Overview <i class="fas fa-chevron-right"></i></a>
-              <a href="#study-area">Study Area <i class="fas fa-chevron-right"></i></a>
-              <a href="#methodology">Methodology <i class="fas fa-chevron-right"></i></a>
-              <a href="#climate-tool">Climate Tool <i class="fas fa-chevron-right"></i></a>
-              <a href="#calibration">Calibration <i class="fas fa-chevron-right"></i></a>
-              <a href="#outputs">Outputs <i class="fas fa-chevron-right"></i></a>
+            <h3>Key Figures</h3>
+
+            <div class="side-gallery">
+              <figure class="side-figure">
+                <img src="images/flood_study_area.png" alt="Study area map">
+                <figcaption>Figure 1. Study area and basin context (Kathmandu Valley / Upper Bagmati).</figcaption>
+              </figure>
+
+              <figure class="side-figure">
+                <img src="images/flood_workflow.png" alt="Modeling workflow">
+                <figcaption>Figure 2. Flood modeling workflow (RoG-based HEC-RAS 2D).</figcaption>
+              </figure>
+
+              <figure class="side-figure">
+                <img src="images/flood_calibration.png" alt="Calibration plot">
+                <figcaption>Figure 3. Model calibration/validation at Khokana station.</figcaption>
+              </figure>
+
+              <figure class="side-figure">
+                <img src="images/flood_hazard_maps.png" alt="Hazard maps">
+                <figcaption>Figure 4. Flood hazard outputs (extent, depth, velocity).</figcaption>
+              </figure>
             </div>
           </div>
 
@@ -188,11 +173,12 @@
             <a class="side-link" href="https://github.com/igt9/Flood-Hazard-Assessment-of-Kathmandu-Valley-under-Climate-Change" target="_blank" rel="noopener noreferrer">
               Repository <i class="fas fa-arrow-right"></i>
             </a>
-            <a class="side-link" href="index.html#contact">
-              Contact <i class="fas fa-arrow-right"></i>
+            <a class="side-link" href="index.html#projects">
+              More Projects <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </aside>
+
       </div>
     </section>
   </main>
@@ -205,4 +191,3 @@
   </footer>
 </body>
 </html>
-
