@@ -1,3 +1,6 @@
+<!-- =========================
+     fairwater.html (UPDATED FULL)
+     ========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=11">
 </head>
 
 <body>
@@ -45,10 +48,8 @@
           supported by GIS mapping and NRW analysis workflows.
         </p>
 
+        <!-- ✅ Removed Contact button -->
         <div class="project-actions">
-          <a class="btn" href="index.html#contact">
-            Contact <i class="fas fa-paper-plane"></i>
-          </a>
           <a class="btn btn-ghost" href="#overview">
             Jump to Overview <i class="fas fa-arrow-down"></i>
           </a>
@@ -82,10 +83,8 @@
             <li><strong>Core DMA:</strong> DMA 10.1 (fair distribution assessment + simulation)</li>
           </ul>
 
-          <div class="figure">
-            <div class="ph">[Insert Photo: meeting / internship snapshot]</div>
-            <div class="caption">Add 1 photo from your internship (optional). Keep it clean and minimal.</div>
-          </div>
+          <!-- ✅ Removed in-between image placeholders -->
+          <!-- (Images now live on the right sidebar gallery) -->
 
           <div class="hr"></div>
 
@@ -107,11 +106,6 @@
             <li><strong>Output:</strong> Updated pipe network layer and pipe database summaries (material/diameter)</li>
           </ul>
 
-          <div class="figure">
-            <div class="ph">[Insert Image: Pipe Network Map (QGIS)]</div>
-            <div class="caption">Recommended: one clean QGIS map export + one screenshot of attribute table summary.</div>
-          </div>
-
           <div class="hr"></div>
 
           <h2 id="nrw">2) NRW Calculation (DMA 7.1)</h2>
@@ -125,11 +119,6 @@
             <li><strong>Approach:</strong> Monthly meter reading-based calculation and comparison across scenarios</li>
             <li><strong>Main difficulty:</strong> Inconsistent meter reading data and unreliable remarks</li>
           </ul>
-
-          <div class="figure">
-            <div class="ph">[Insert Figure: NRW Ratio Graph(s) + Metered vs Unmetered Comparison]</div>
-            <div class="caption">Use 2 images: NRW ratio plot + bar/summary of metered vs unmetered customers.</div>
-          </div>
 
           <div class="hr"></div>
 
@@ -146,20 +135,10 @@
             <li><strong>Network:</strong> Build/verify the water supply network map for DMA 10.1</li>
           </ul>
 
-          <div class="figure">
-            <div class="ph">[Insert Figure: DMA 10.1 Coverage + Sub-division Map]</div>
-            <div class="caption">Use 2 side-by-side images later: DMA boundary + sub-division by meter address.</div>
-          </div>
-
           <h2 id="watergems">Hydraulic Modeling (WaterGEMS)</h2>
           <p>
             A hydraulic model was developed for DMA 10.1 and compared with actual meter reading observations to evaluate real-world performance.
           </p>
-
-          <div class="figure">
-            <div class="ph">[Insert Screenshot: WaterGEMS Model Layout]</div>
-            <div class="caption">Add a clear WaterGEMS model screenshot (zoomed & readable).</div>
-          </div>
 
           <h2 id="findings">Key Findings</h2>
           <p>
@@ -172,11 +151,6 @@
             These discrepancies suggest significant NRW influences (leakage, meter inaccuracies, unauthorized consumption). From a fairness perspective,
             even if the model allocates water “equally,” the real supply can be much lower in some communities — undermining equity and transparency.
           </p>
-
-          <div class="figure">
-            <div class="ph">[Insert Figure: Model vs Meter Reading Comparison Table/Chart]</div>
-            <div class="caption">This should be your strongest figure: model vs observed comparison (clean & readable).</div>
-          </div>
 
           <h2 id="challenges">Challenges</h2>
           <ul class="nice-list">
@@ -200,29 +174,44 @@
 
           <div class="hr"></div>
 
-          <h2 id="gallery">Suggested Image Placement (So it looks “pro”)</h2>
-          <ul class="nice-list">
-            <li><strong>1 image:</strong> DMA 10.1 coverage map (clean boundary map)</li>
-            <li><strong>1 image:</strong> DMA sub-division map (based on meter reading address)</li>
-            <li><strong>1 image:</strong> WaterGEMS model screenshot (layout view)</li>
-            <li><strong>1 image:</strong> Model vs meter comparison (table/chart)</li>
-            <li><strong>Optional:</strong> NRW ratio plot + metered vs unmetered comparison</li>
-          </ul>
-
+          <h2 id="gallery">Figures</h2>
           <p style="margin-top: 10px; font-weight: 600; color: rgba(15,23,42,0.65);">
-            Note: If any figures contain sensitive operational data, you can blur/clip the identifiers before uploading to the website.
+            All key figures are shown on the right panel for a clean, professional layout.
           </p>
+
         </article>
 
         <!-- RIGHT: STICKY SIDEBAR -->
         <aside class="project-side">
+
+          <!-- ✅ Replaces Quick Info with Images -->
           <div class="info-card">
-            <h3>Quick Info</h3>
-            <div class="info-row"><span>Focus</span><span>DMA Planning • Fair Supply</span></div>
-            <div class="info-row"><span>DMA</span><span>DMA 10.1</span></div>
-            <div class="info-row"><span>Support Work</span><span>QGIS • NRW (DMA 7.1)</span></div>
-            <div class="info-row"><span>Modeling</span><span>WaterGEMS</span></div>
-            <div class="info-row"><span>Tools</span><span>QGIS • Excel • Python</span></div>
+            <h3>Key Figures</h3>
+            <p class="side-gallery-sub">
+              Add your images inside <b>/images</b> and update captions anytime.
+            </p>
+
+            <div class="side-gallery">
+              <figure class="side-figure">
+                <img src="images/fairwater-01.jpg" alt="DMA 10.1 coverage map">
+                <figcaption>Figure 1. DMA 10.1 coverage map (boundary / service area).</figcaption>
+              </figure>
+
+              <figure class="side-figure">
+                <img src="images/fairwater-02.jpg" alt="Pipe network mapping in QGIS">
+                <figcaption>Figure 2. Pipe network mapping output in QGIS.</figcaption>
+              </figure>
+
+              <figure class="side-figure">
+                <img src="images/fairwater-03.jpg" alt="WaterGEMS hydraulic model layout">
+                <figcaption>Figure 3. WaterGEMS hydraulic model layout (DMA 10.1).</figcaption>
+              </figure>
+
+              <figure class="side-figure">
+                <img src="images/fairwater-04.jpg" alt="Model vs meter reading comparison">
+                <figcaption>Figure 4. Model vs meter reading comparison (key results).</figcaption>
+              </figure>
+            </div>
           </div>
 
           <div class="info-card">
@@ -237,7 +226,7 @@
               <a href="#watergems">WaterGEMS <i class="fas fa-chevron-right"></i></a>
               <a href="#findings">Findings <i class="fas fa-chevron-right"></i></a>
               <a href="#recommendations">Recommendations <i class="fas fa-chevron-right"></i></a>
-              <a href="#gallery">Image Placement <i class="fas fa-chevron-right"></i></a>
+              <a href="#gallery">Figures <i class="fas fa-chevron-right"></i></a>
             </div>
           </div>
 
@@ -245,9 +234,6 @@
             <h3>Links</h3>
             <a class="side-link" href="index.html#projects">
               More Projects <i class="fas fa-arrow-right"></i>
-            </a>
-            <a class="side-link" href="index.html#contact">
-              Contact <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </aside>
@@ -262,13 +248,5 @@
       <a class="to-top" href="#top">Back to top ↑</a>
     </div>
   </footer>
-
-  <!-- Source grounding for this page (internship report):
-       Internship objective & dates: :contentReference[oaicite:8]{index=8}
-       Activity summary: :contentReference[oaicite:9]{index=9}
-       QGIS mapping details: :contentReference[oaicite:10]{index=10}
-       NRW definition/task & challenge: :contentReference[oaicite:11]{index=11} :contentReference[oaicite:12]{index=12}
-       DMA 10.1 fairness + WaterGEMS + findings/challenges: :contentReference[oaicite:13]{index=13} :contentReference[oaicite:14]{index=14} :contentReference[oaicite:15]{index=15}
-  -->
 </body>
 </html>
