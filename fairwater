@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FairWater DMA Planning | Imej Gautam</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=10">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top" aria-label="Go to homepage">
+        <span class="brand-dot"></span>
+        <span>Imej Gautam</span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html#top">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="project-hero">
+      <div class="container project-hero-inner">
+        <a class="back-link" href="index.html#projects">
+          <i class="fas fa-arrow-left"></i> Back to Projects
+        </a>
+
+        <h1>FairWater DMA Planning</h1>
+
+        <p class="project-subtitle">
+          Urban water distribution modeling focused on District Metered Area (DMA) planning and Non-Revenue Water (NRW)
+          analysis to support monitoring, pressure management, and leakage reduction.
+        </p>
+
+        <div class="project-actions">
+          <a class="btn" href="https://github.com/imejgautam" target="_blank" rel="noopener noreferrer">
+            GitHub <i class="fab fa-github"></i>
+          </a>
+          <a class="btn btn-ghost" href="#overview">
+            Jump to Overview <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container project-grid">
+        <div class="writeup">
+          <h2 id="overview">Overview</h2>
+          <p>
+            This project supports urban water distribution analysis by developing a DMA planning workflow and applying
+            NRW analysis concepts. The aim is to partition the network into manageable zones for monitoring and control,
+            improve operational visibility, and identify leakage-prone behaviors through pressure/flow interpretation.
+          </p>
+
+          <div class="hr"></div>
+
+          <h2 id="study-area">System / Study Context</h2>
+          <p>
+            The work is designed for a typical urban distribution network where supply nodes, demand nodes, and
+            pipelines are represented in a hydraulic model. DMA boundaries are defined to create controllable zones and
+            support targeted monitoring via meter locations.
+          </p>
+
+          <div class="figure">
+            <div class="ph">[Insert Network Map / DMA Boundary Figure Here]</div>
+            <div class="caption">Figure: Network layout and proposed DMA boundaries (replace with your map).</div>
+          </div>
+
+          <div class="hr"></div>
+
+          <h2 id="methodology">Methodology</h2>
+          <p>
+            The workflow combines network data preparation, hydraulic simulation, DMA boundary definition,
+            monitoring design, and NRW-focused interpretation.
+          </p>
+
+          <h2>Key Components</h2>
+          <ul class="nice-list">
+            <li><strong>Network Data:</strong> Nodes, pipes, reservoirs/tanks, demands (and patterns if available)</li>
+            <li><strong>Hydraulic Modeling:</strong> Flow and pressure simulation under representative conditions</li>
+            <li><strong>DMA Design:</strong> Boundary selection, zone creation, inlet/outlet identification</li>
+            <li><strong>Monitoring:</strong> Candidate meter locations for district-level control</li>
+            <li><strong>NRW Analysis:</strong> Pressure/flow behavior and indicators supporting leakage investigation</li>
+          </ul>
+
+          <div class="figure">
+            <div class="ph">[Insert Workflow Diagram Here]</div>
+            <div class="caption">Figure: Workflow from network model → DMA design → monitoring → NRW insights.</div>
+          </div>
+
+          <div class="hr"></div>
+
+          <h2 id="analysis">Analysis & Outputs</h2>
+          <ul class="nice-list">
+            <li>DMA zoning plan and boundary maps</li>
+            <li>Pressure distribution and critical node identification</li>
+            <li>Flow summaries at key links / DMA inlets</li>
+            <li>NRW interpretation notes and recommended next investigations</li>
+          </ul>
+
+          <div class="figure">
+            <div class="ph">[Insert Pressure Map / Flow Summary Plot Here]</div>
+            <div class="caption">Figure: Pressure map or flow time-series summary (insert your plots).</div>
+          </div>
+
+          <div class="hr"></div>
+
+          <h2 id="tools">Tools</h2>
+          <ul class="nice-list">
+            <li>EPANET / equivalent network model</li>
+            <li>GIS for mapping and visualization</li>
+            <li>Excel for reporting and summaries</li>
+            <li>Python (optional) for automation/processing</li>
+          </ul>
+
+          <div class="hr"></div>
+
+          <h2 id="next">Next Improvements</h2>
+          <ul class="nice-list">
+            <li>Calibrate network with observed pressure/flow measurements</li>
+            <li>Run multi-demand scenarios and evaluate sensitivity</li>
+            <li>Integrate leak detection indicators and nightly minimum flow analysis</li>
+          </ul>
+        </div>
+
+        <aside class="project-side">
+          <div class="info-card">
+            <h3>Quick Info</h3>
+            <div class="info-row"><span>Category</span><span>Water Networks</span></div>
+            <div class="info-row"><span>Focus</span><span>DMA • NRW</span></div>
+            <div class="info-row"><span>Outputs</span><span>Maps • Metrics</span></div>
+            <div class="info-row"><span>Tools</span><span>EPANET • GIS • Excel</span></div>
+          </div>
+
+          <div class="info-card">
+            <h3>On this page</h3>
+            <div class="toc">
+              <a href="#overview">Overview <i class="fas fa-chevron-right"></i></a>
+              <a href="#study-area">Context <i class="fas fa-chevron-right"></i></a>
+              <a href="#methodology">Methodology <i class="fas fa-chevron-right"></i></a>
+              <a href="#analysis">Outputs <i class="fas fa-chevron-right"></i></a>
+              <a href="#tools">Tools <i class="fas fa-chevron-right"></i></a>
+              <a href="#next">Next Steps <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Links</h3>
+            <a class="side-link" href="https://github.com/imejgautam" target="_blank" rel="noopener noreferrer">
+              GitHub <i class="fas fa-arrow-right"></i>
+            </a>
+            <a class="side-link" href="index.html#contact">
+              Contact <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Imej Gautam. All rights reserved.</p>
+      <a class="to-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
