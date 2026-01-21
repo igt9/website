@@ -616,6 +616,7 @@ a:focus-visible{
   width: 220px;
   height: 220px;
   border-radius: 50%;
+  overflow: hidden;   /* ← THIS is the fix */
   padding: 6px;
   background: linear-gradient(
     135deg,
@@ -634,3 +635,4 @@ a:focus-visible{
   border-radius: 50%;
   background: #ffffff;
 }
+
