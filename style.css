@@ -637,3 +637,33 @@ a:focus-visible{
     padding:18px;
   }
 }
+/* =========================
+   Fairwater micro polish (append-only)
+   ========================= */
+
+/* smoother spacing in writeup */
+.writeup h2{
+  scroll-margin-top: 100px; /* fixes anchor jump under sticky header */
+}
+
+.writeup h2 + p{
+  margin-top: 8px;
+}
+
+/* gallery images: consistent crop + cleaner look */
+.side-figure img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* optional: slightly tighter captions */
+.side-figure figcaption{
+  background: rgba(255,255,255,.75);
+}
+
+/* prevent sidebar card from feeling too tight */
+.info-card{
+  overflow: hidden;
+}
+
